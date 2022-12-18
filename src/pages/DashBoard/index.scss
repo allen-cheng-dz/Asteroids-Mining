@@ -1,0 +1,28 @@
+.dashboard-container{
+  font-size: 16px;
+  color: white;
+  .dashboard-left{
+    padding: 0 .5em;
+    .button-group{
+      display: flex;
+      align-items: center;
+      padding: 0 0 2em 1em;
+      border-bottom: 0.5px solid #33344B
+    }
+  }
+  .dashboard-right{
+    padding: 0 2em;
+    .current-year{
+      font-size: 16px;
+      padding: .75em 0;
+    }
+    .space-background-image{
+      max-width: 800px;
+      min-width: 600px;
+      height: 800px;
+      background-image: url('./../../assets/images/space-background-image.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.container{
+  color: white;
+  .logo-container{
+    display: flex;
+    align-items: center;
+    padding: 1.64em;
+    .logo{
+      font-size: 19.5px;
+      // padding: 0 .6em;
+      margin-right: .55em;
+    }
+    .title{
+      font-size: 1em;
+      letter-spacing: 0.2em;
+    }
+  }
+}

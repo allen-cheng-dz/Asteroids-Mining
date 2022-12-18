@@ -1,0 +1,28 @@
+.button-container{
+  min-width: 5.8em;
+  min-height: 5.5em;
+  border-radius: .6em;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+  cursor: pointer;
+  color: #9499C3;
+  .icon-container{
+    padding: .5em;
+    .icon-large{
+      font-size: 27px;
+    }
+
+    .active::before{
+      color: #38D9A9;
+    }
+  }
+}
+
+.button-active{
+  border: 1px solid #32334A;
+  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.25);
+}
