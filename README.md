@@ -1,7 +1,8 @@
 # Asteroids Mining Simulation
 
 <detail>
-<summry>Table of content</summary>
+<summry> Table of content </summary>
+
 - [Asteroids Mining Simulation](#asteroids-mining-simulation)
   - [usage](#usage)
     - [Quick start](#quick-start)
