@@ -25,6 +25,15 @@ function MinerCreateForm(props) {
   },[id, onCancel])
 
   const onFinish = (value) => {
+    if(value.carryCapacity <= 0 || value.miningSpeed <= 0 || value.travelSpeed <= 0){
+      message.error("carryCapacity|miningSpeed|travelSpeed should greater then 0.");
+      return;
+    }
+    let total = value.carryCapacity + value.miningSpeed + value.travelSpeed;
+    if(total > 200){
+      message.error("total of carryCapacity, miningSpeed and travelSpeed should less then or equal to 200.")
+      return;
+    }
     let data = {
       ...value,
       "angle": 0,
@@ -103,7 +112,7 @@ function MinerCreateForm(props) {
             name="carryCapacity"
             label="carryCapacity"
           >
-            <InputNumber className="input-number"/>
+            <InputNumber max={200} min={1} className="input-number"/>
           </Form.Item>
         </Col>
         <Col span={8}>
@@ -111,7 +120,7 @@ function MinerCreateForm(props) {
             name="travelSpeed"
             label="travelSpeed"
           >
-            <InputNumber className="input-number"/>
+            <InputNumber max={200} min={1} className="input-number"/>
           </Form.Item>
         </Col>
         <Col span={8}>
@@ -119,7 +128,7 @@ function MinerCreateForm(props) {
             name="miningSpeed"
             label="miningSpeed"
           >
-            <InputNumber className="input-number"/>
+            <InputNumber max={200} min={1} className="input-number"/>
           </Form.Item>
         </Col>
       </Row>
