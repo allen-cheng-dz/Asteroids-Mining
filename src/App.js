@@ -14,7 +14,7 @@ const App = () => {
           colorPrimary: "#191A29",
           colorTextBase: "#9499C3",
           fontFamily: "'Poppins', 'Lato'",
-          fontSize: 12,
+          fontSize: 11,
           colorBgContainer: "#191A29",
           colorBorder: "#9499C3",
           colorBorderSecondary: "#191A29",
